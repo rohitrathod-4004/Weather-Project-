@@ -123,3 +123,20 @@ The frontend communicates with the backend via the following endpoint:
 *   `400 Bad Request`: Returned immediately if the city query parameter is empty.
 *   `404 Not Found`: Returned if WeatherAPI confirms the location does not exist.
 *   `500/502 Server Error`: Returned generically for invalid API keys or network outages to prevent leaking internal details.
+
+
+## Screenshots
+
+The application adapts its interface based on the weather data returned for different locations.
+
+### Pune
+
+![Weather in Pune](./assets/pune.png)
+
+### London
+
+![Weather in Jaipur](./assets/jaipur.png)
+
+### New York
+
+![Weather in Jakarta](./assets/jakarta.png)
