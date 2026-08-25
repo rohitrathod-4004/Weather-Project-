@@ -13,7 +13,9 @@ export const getWeather = async (req, res) => {
         const apiKey = process.env.WEATHER_API_KEY;
         if (!apiKey || apiKey === 'your_weather_api_key_here') {
             console.error('WEATHER_API_KEY is missing or invalid.');
-            return res.status(500).json({ error: 'Server configuration error.' });
+            return res.status(500).json({ 
+                error: 'Server configuration error: Please add your WeatherAPI key to the .env file.' 
+            });
         }
 
         // 3. Make request to WeatherAPI using native fetch
